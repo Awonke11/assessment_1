@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+:root {
+    --bg-color: #fff;
+    --secondary-bg-color: #dbdbdb;
+    --text-color: #000000;
+    --dot-color: rgb(224, 224, 11);
+    --grey-color: #636363;
+    --add-color: rgb(0, 140, 255);
+    --divider-color: #b9b9b9;
+    --grey-text: rgb(156, 156, 156);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #20134e;
+        --secondary-bg-color: #160e35;
+        --text-color: #ffffff;
+        --add-color: rgb(0, 94, 170);
+        --divider-color: #494949;
+        --grey-color: #525252;
+        --grey-text: rgb(165, 165, 165);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    max-width: 1100px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+
+/*^ ------------- Navigation ---------------- */
+
+.nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    margin-bottom: 3.5rem;
+    background-color: var(--bg-color);
+}
+
+.nav-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.nav-header .fa-bars {
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--grey-color);
+}
+
+.nav-header-logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.nav-header-logo .fa-circle {
+    font-size: .5rem;
+    color: var(--dot-color);
+}
+
+.nav-header-logo .nav-header-logo-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+.nav-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 1.4rem;
+    background-color: var(--secondary-bg-color);
+    border-radius: 30px;
+    gap: .8rem;
+}
+
+.nav-area-input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.nav-area-icon {
+    background-color: var(--add-color);
+    padding: 1.5rem;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    outline: none;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-area-icon .fa-plus {
+    font-size: 1.2rem;
+}
+
+/*^ ----------------------- Divider Line -------------------------  */
+.divider-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider-color);
+    margin-bottom: 1.5rem;
+}
+
+/*^ ----------------------- Main -------------------------  */
+.main {
+    width: 100%;
+}
+
+.main-todo,
+.main-completed {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.main-todo-title,
+.main-completed-title {
+    color: var(--grey-text);
+    margin-bottom: .8rem;
+    font-size: 1rem;
+}
+
+.main-todo-container,
+.main-completed-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.main-todo-container-item,
+.main-completed-container-item {
+    border: 1px solid #c7c7c7;
+    padding: 1.8rem 1.4rem;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+    .main-todo-container-item,
+    .main-completed-container-item {
+        border: none;
+        background-color: rgb(52, 42, 80);
+        box-shadow: none;
+    }
+}
+
+.main-todo-container-item-main,
+.main-completed-container-item-main {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    cursor: pointer;
+}
+
+.main-todo-container-item-main .fa-circle {
+    font-size: 1.5rem;
+}
+
+.main-todo-container-item-main-title {
+    font-size: 1.3rem;
+    color: var(--grey-text);
+}
+
+.main-completed-container-item-main .fa-circle-check {
+    font-size: 1.5rem;
+    color: rgb(0, 161, 0);
+}
+
+.main-completed-container-item-main-title {
+    font-size: 1.3rem;
+    color: var(--grey-text);
+    text-decoration: line-through;
+}
+
+.fa-trash-can {
+    color: 2rem;
+    color: var(--grey-text);
+    cursor: pointer;
+    z-index: 12;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 1rem;
+    }
+    .nav {
+        margin-bottom: 2rem;
+    }
+}

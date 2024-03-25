@@ -22,12 +22,23 @@ The **Chores Application** is a full-stack web application that allows users to 
    - **Dependencies**:
      - `mysql2`: A MySQL client for Node.js.
      - `dotenv`: Loads environment variables from a `.env` file.
+       ```env
+         MYSQL_HOST=HOSTNAME
+         MYSQL_USER=ROOTUSER
+         MYSQL_PASSWORD=PASSWORD
+         MYSQL_DATABASE=DATABASE_NAME
+       ```
      - `nodemon`: Automatically restarts the server during development.
    - **Database**: MySQL 🗄️
 
 2. **Spring Boot (Port 8080) 🌱**:
    - **Dependencies**:
      - Spring Boot Starter Pack with MongoDB (Version 3.0.6)
+       ```properties
+       spring.data.mongodb.database=database_name
+       spring.data.mongodb.uri=database_url
+       ```
+spring.data.mongodb.uri=url
    - **Database**: MongoDB 🍃
 
 ## Endpoints 🚪
@@ -53,12 +64,10 @@ The **Chores Application** is a full-stack web application that allows users to 
    - For Spring Boot: `./mvnw spring-boot:run` 🏃‍♂️
 
 ## Contributing 🤝
-
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md).
+Contributions are welcome! You can add more functionality and complexity to this project, and make it your own.
 
 ## License 📜
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 📄
+This project is licensed under the MIT License. 📄
 
 ![16 Best Cities in Spain - Beautiful Places to Visit | The Planet D] ![5 of the Best Cities in Spain to Visit for the Ultimate Experience] ![The Most Popular Cities to Visit in Spain] ![16 Best Cities in Spain - Beautiful Places to Visit | The Planet D] ![The Most Popular Cities to Visit in Spain] ![10 Best Places to Visit in Spain - #TravelWorld]
 

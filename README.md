@@ -69,6 +69,4 @@ Contributions are welcome! You can add more functionality and complexity to this
 ## License 📜
 This project is licensed under the MIT License. 📄
 
-![16 Best Cities in Spain - Beautiful Places to Visit | The Planet D] ![5 of the Best Cities in Spain to Visit for the Ultimate Experience] ![The Most Popular Cities to Visit in Spain] ![16 Best Cities in Spain - Beautiful Places to Visit | The Planet D] ![The Most Popular Cities to Visit in Spain] ![10 Best Places to Visit in Spain - #TravelWorld]
-
 Now, go conquer those chores! 🎉🧼🧹
